@@ -1,6 +1,7 @@
 'use client';
 
 import { useChat } from 'ai/react';
+import MessageContent from './components/MessageContent';
 
 export default function Page() {
   const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat();
@@ -61,7 +62,7 @@ export default function Page() {
                   }`}
                 >
                   <div className="whitespace-pre-wrap text-[15px]">
-                    {message.content}
+                    <MessageContent content={message.content} />
                   </div>
                 </div>
               </div>
