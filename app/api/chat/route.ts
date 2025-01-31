@@ -10,6 +10,9 @@ export async function POST(req: Request) {
   const result = streamText({
     model: openai('o3-mini'),
     messages,
+    providerOptions: {
+        openai: { reasoningEffort: 'medium' },
+      },
   });
 
   return result.toDataStreamResponse();

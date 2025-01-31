@@ -3,22 +3,103 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 231, 231, 245;
+  --background-end-rgb: 255, 255, 255;
+
+  /* COLORS */
+  --brand-default: #254bf1;
+  --brand-fainter: #e7ebfd;
+  --brand-faint: #c6cfff;
+  --brand-subtle: #a1aff7;
+  --brand-muted: #4d87e7;
+  --brand-dark: #0d2189;
+  --brand-darker: #000a40;
+
+  --secondary-accent: #9f9672;
+  --secondary-accent2x: #89805d;
+  --secondary-dark: #f4f1e7;
+  --secondary-darker: #efebdc;
+  --secondary-darkest: #e5e0cd;
+  --secondary-default: #faf7ec;
+  --secondary-faint: #fffdf5;
+  --secondary-fainter: #fffefa;
+
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-400: #a3a3a3;
+  --gray-500: #737373;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-800: #262626;
+  --gray-900: #171717;
+  --gray-950: #0a0a0a;
+
+  --black: #000000;
+  --white: #ffffff;
+
+  --accent-yellow-light: #fef3c7;
+  --accent-yellow-dark: #92400e;
+  --accent-skyblue-light: #dbeafe;
+  --accent-skyblue-dark: #1e40af;
+  --accent-green: #50b40a;
+  --accent-red: #d32f2f;
+  --accent-darkgreen-dark: #065f46;
+  --accent-darkgreen-light: #d1fae5;
+  --accent-purple-dark: #5b21b6;
+  --accent-purple-light: #ede9fe;
+  --accent-pink-dark: #9d174d;
+  --accent-pink-light: #fce7f3;
+  --accent-maroon-dark: #991b1b;
+  --accent-maroon-light: #fee2e2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
+}
+
+:root {
+  --background: var(--secondary-default);
+  --accent: var(--brand-default);
+  --accent-background: var(--brand-default);
+}
+
+:root {
+  --border-default: var(--gray-300);
+  --border-radius-default: 2px;
+
+  /* Typography */
+  --font-family-sans: 'ABCDiatype', 'Trebuchet MS', sans-serif;
+  --font-family-serif: 'Reckless', Georgia, serif;
+  --text-light-default: #111827;
+  --text-light-muted: #6b7280;
+  --text-light-subtle: #9ca3af;
+  --text-light-faint: #e5e7eb;
+  --text-light-link: #1f40ed;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+  /* Apply ABCDiatype for body */
+  font-family: var(--font-abcd-diatype), sans-serif;
 }
+
+/* Apply Reckless for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-reckless), serif;
+}
+
 
 @layer utilities {
   .text-balance {
