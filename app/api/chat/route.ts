@@ -13,7 +13,7 @@ export async function POST(req: Request) {
 
   const result = streamText({
     model: openai('o3-mini'),
-    system: 'You are a helpful assistant that searches the web for information and provides accurate answer. Use simple english and simple words. Use the webSearch tool in every message!',
+    system: 'Always use the webSearch tool. You are a helpful assistant that searches the web for information and provides accurate answer. Use simple english. Use the webSearch tool in every message!',
     messages,
     providerOptions: {
         openai: { reasoningEffort: 'medium' },
@@ -21,7 +21,7 @@ export async function POST(req: Request) {
     maxSteps: 2,
     tools: {
       webSearch: tool({
-        description: 'Search the web for current information on a topic. Use this tool in every message.',
+        description: 'Search the web for current information on a topic. Use this tool in every message, always!',
         parameters: z.object({
           query: z.string().describe('The search query'),
         }),
