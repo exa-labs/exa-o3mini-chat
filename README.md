@@ -3,6 +3,8 @@
 
 ### Try the tool: https://exa-o3mini-chat.vercel.app/
 
+![Screenshot](https://exa-o3mini-chat.vercel.app/opengraph-image.jpg)
+
 <br>
 
 ## 🎯 What is Exa & o3-mini Chat App?
