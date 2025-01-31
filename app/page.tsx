@@ -44,7 +44,7 @@ export default function Page() {
       </div>
 
       {/* Chat Messages */}
-      <div className="md:max-w-4xl mx-auto p-6 pt-20 pb-24 space-y-6">
+      <div className="md:max-w-4xl mx-auto px-4 md:px-6 py-6 pt-20 pb-24 space-y-6">
         <div className="space-y-6">
           {messages.map((message) => (
             <div key={message.id}>
