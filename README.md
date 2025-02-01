@@ -1,7 +1,7 @@
 # 💬 Exa & o3-mini Chat App
 ### Powered by [Exa](https://exa.ai) - The Web Search API
 
-### Try the tool: https://exa-o3mini-chat.vercel.app/
+### Try the tool: https://o3minichat.exa.ai/
 
 ![Screenshot](https://exa-o3mini-chat.vercel.app/opengraph-image.jpg)
 
