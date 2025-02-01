@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://exa-o3mini-chat.vercel.app/",
+        url: "https://o3minichat.exa.ai/opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "Exa & o3-mini chat app"
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Exa & o3-mini chat app",
     description: "An opensource chat application built with Exa for web search and openai o3-mini.",
-    images: ["https://exa-o3mini-chat.vercel.app/"]
+    images: ["https://o3minichat.exa.ai/opengraph-image.jpg"]
   },
-  metadataBase: new URL("https://exa-o3mini-chat.vercel.app/"),
+  metadataBase: new URL("https://o3minichat.exa.ai/"),
   robots: {
     index: true,
     follow: true
