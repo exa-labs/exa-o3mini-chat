@@ -75,7 +75,7 @@ export default function Page() {
               <div className="w-2 h-2 rounded-full bg-[var(--secondary-accent2x)] animate-[bounce_1s_infinite]"></div>
               <div className="w-2 h-2 rounded-full bg-[var(--secondary-accent2x)] animate-[bounce_1s_infinite_200ms]"></div>
               <div className="w-2 h-2 rounded-full bg-[var(--secondary-accent2x)] animate-[bounce_1s_infinite_400ms]"></div>
-              <span className="text-sm font-medium text-[var(--secondary-accent2x)]">Asking o3-mini...</span>
+              <span className="text-sm font-medium text-[var(--secondary-accent2x)]">Asking o3-mini and searching on Exa...</span>
             </div>
           )}
         </div>
@@ -113,6 +113,11 @@ export default function Page() {
               Search
             </button>
           </form>
+          {!hasMessages && (
+            <div className="text-center mt-6 text-gray-600 text-sm">
+              powered by Exa - The Web Search API
+            </div>
+          )}
         </div>
       </div>
     </>
