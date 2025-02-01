@@ -115,7 +115,10 @@ export default function Page() {
           </form>
           {!hasMessages && (
             <div className="text-center mt-6 text-gray-600 text-sm">
-              powered by Exa - The Web Search API
+              <span> powered by </span>
+                <a href="https://exa.ai" target="_blank" className="underline hover:text-[var(--brand-default)]">
+                  Exa - The Web Search API 
+                </a>
             </div>
           )}
         </div>
