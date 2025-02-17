@@ -3,7 +3,7 @@
 
 ### Try the tool: https://o3minichat.exa.ai/
 
-![Screenshot](https://exa-o3mini-chat.vercel.app/opengraph-image.jpg)
+![Screenshot](https://o3minichat.exa.ai/opengraph-image.jpg)
 
 <br>
 
