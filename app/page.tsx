@@ -13,7 +13,7 @@ export default function Page() {
       <div className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm border-b z-50">
         <div className="md:max-w-4xl mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
           <a
-            href="https://dashboard.exa.ai"
+            href="https://dashboard.exa.ai/playground/answer"
             target="_blank"
             className="flex items-center px-4 py-1.5 bg-white border-2 border-[var(--brand-default)] text-[var(--brand-default)] 
             rounded-full hover:bg-[var(--brand-default)] hover:text-white transition-all duration-200 
@@ -21,26 +21,36 @@ export default function Page() {
           >
             <span className="text-sm">Try Exa API</span>
           </a>
-          <a
-            href="https://github.com/exa-labs/exa-o3mini-chat"
-            target="_blank"
-            className="flex items-center gap-1.5 text-md text-gray-600 hover:text-[var(--brand-default)] transition-colors"
-          >
-            <span className="underline">View Source Code</span>
-            <svg
-              className="w-3.5 h-3.5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          <div className="flex items-center gap-4 text-md text-gray-600">
+            <a
+              href="https://exa.ai/demos"
+              target="_blank"
+              className="hover:text-[var(--brand-default)] transition-colors"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
-            </svg>
-          </a>
+              <span className="underline">See More Demos</span>
+            </a>
+            <span className="text-gray-400">|</span>
+            <a
+              href="https://github.com/exa-labs/exa-o3mini-chat"
+              target="_blank"
+              className="flex items-center gap-1.5 hover:text-[var(--brand-default)] transition-colors"
+            >
+              <span className="underline">View Project Code</span>
+              <svg
+                className="w-3.5 h-3.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
 
